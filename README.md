@@ -17,26 +17,32 @@ The project uses the public [Chest X-ray Pneumonia dataset](https://www.kaggle.c
   - Resized to 64×64.
 
   - Normalized to range [0, 1]
+    
 
 **2. 📐Feature Extraction**
 
   - Extracted HOG features from each image using skimage.feature.hog
+    
 
 **3. 📉Dimensionality Reduction**
 
   - Used PCA to reduce HOG feature vectors to 100 components.
     
+    
 **4. ⚖️Class Balancing**
 
   - Use SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalance in training data.
+    
 
 **5. 🤖Model Training**
 
   - Used KNN classifier (optimal K found via elbow method).
 
+
 **6. 📊Evaluation**
 
   - Evaluated on test data using accuracy, classification report, and confusion matrix.
+    
 
 **7. 🔍Single Image Prediction**
 
@@ -49,6 +55,7 @@ The project uses the public [Chest X-ray Pneumonia dataset](https://www.kaggle.c
   - Predict class using the trained model
 
   - Display the image and prediction result
+
 
 ## 📈 Results
 Classifier: KNN (k=3)
@@ -72,15 +79,7 @@ Example image predictions (NORMAL / PNEUMONIA)
 - **scikit-image: hog** 
 - **imbalanced-learn: SMOTE**
 
-NumPy, Matplotlib
 
-PIL (Python Imaging Library)
-
-scikit-learn: KNeighborsClassifier, PCA, metrics
-
-scikit-image: hog
-
-imbalanced-learn: SMOTE
 
 ## 📌 Project Highlights
 - Classical ML approach (no deep learning)
